@@ -20,7 +20,12 @@ class Window:
         obj.pack_forget()
         self.showing.remove(obj)
     
-    class StartWindow:
+    def cleanWindow(self):
+        for i in self.showing:
+            i.pack_forget()
+        self.showing = []
+    
+    class StartWindow():
         def quit(self):
             exit()
 
@@ -50,8 +55,6 @@ class Window:
 
             Window.root.mainloop()
     class InGame:
-        pass
-    def cleanWindow():
         pass
 
 if __name__ == "__main__":
