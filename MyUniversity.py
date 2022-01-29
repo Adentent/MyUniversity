@@ -4,12 +4,14 @@ DESIGN: Adentent
 """
 
 from tkinter import *
+import os
 
 
 class Window:
     def __init__(self):
         self.root = Tk()
         self.root.title("My University")
+        self.message = ""
         self.showing = []
 
     def pack(self, obj):
@@ -25,18 +27,19 @@ class Window:
             i.pack_forget()
         self.showing = []
     
-    class StartWindow():
+    class StartWindow:
         def quit(self):
             exit()
 
         def beginGame(self):
-            pass
+            Window.cleanWindow()
+            Window.message = "StartGame"
 
         def main(self):
             # main
             NewGame = Button(Window.root,
                              text="开始游戏",
-                             font=("zpix", 20),
+                             font=("zpix", 50),
                              bg="darkkhaki",
                              fg="white",
                              activebackground="darkkhaki",
@@ -45,7 +48,7 @@ class Window:
             Window.pack(NewGame)
             QuitGame = Button(Window.root,
                               text="关闭游戏",
-                              font=("zpix", 10),
+                              font=("zpix", 30),
                               bg="grey",
                               fg="white",
                               activebackground="red",
@@ -54,8 +57,9 @@ class Window:
             Window.pack(QuitGame)
 
             Window.root.mainloop()
-    class InGame:
-        pass
+    class ChoosePlayer:
+        def __init__(self):
+            Window.root.title("My University - ChossePlayer")
 
 if __name__ == "__main__":
     Window = Window()
