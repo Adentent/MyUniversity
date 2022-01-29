@@ -1,0 +1,198 @@
+Noto Sans CJK TC
+Noto Serif CJK KR
+Lohit Kannada
+Noto Serif CJK TC
+Samyak Devanagari
+Noto Sans CJK TC
+Century Schoolbook L
+DejaVu Math TeX Gyre
+OpenSymbol
+Wingdings 3
+Wingdings 2
+Khmer OS System
+Nakula
+Chandas
+Keraleeyam
+Noto Sans CJK KR
+Noto Serif CJK JP
+Noto Sans CJK TC
+Noto Serif CJK KR
+Mukti Narrow
+Meera
+Noto Sans CJK SC
+Webdings
+Kalimati
+KacstQurn
+Gubbi
+Tibetan Machine Uni
+Noto Serif CJK SC
+Noto Sans CJK HK
+Noto Sans CJK HK
+Umpush
+DejaVu Sans Mono
+Purisa
+Pothana2000
+Noto Serif CJK JP
+KacstBook
+KacstLetter
+Noto Serif CJK KR
+Noto Serif CJK TC
+Norasi
+Loma
+Karumbi
+Wingdings
+KacstDigital
+AR PL UKai TW MBE
+Noto Sans CJK JP
+KacstTitleL
+mry_KacstQurn
+Noto Sans CJK SC
+URW Palladio L
+Noto Serif CJK SC
+Noto Serif CJK TC
+Likhan
+Noto Serif CJK JP
+Padauk Book
+Phetsarath OT
+Sawasdee
+Sahadeva
+Tlwg Typist
+Noto Sans Mono CJK SC
+Tlwg Typewriter
+Noto Sans Mono CJK TC
+Noto Sans Mono CJK JP
+Samyak Tamil
+Noto Sans Mono CJK HK
+Noto Sans Mono CJK KR
+URW Gothic L
+Dingbats
+Noto Serif CJK SC
+Noto Serif CJK SC
+URW Chancery L
+Ubuntu
+Chilanka
+FreeSerif
+Lohit Assamese
+Padauk
+AnjaliOldLipi
+Ubuntu Condensed
+Samyak Gujarati
+ori1Uni
+DejaVu Sans
+KacstOffice
+Noto Sans CJK KR
+Noto Serif CJK KR
+DejaVu Sans
+DejaVu Serif
+Kinnari
+KacstArt
+Lohit Odia
+Tlwg Mono
+Symbol
+aakar
+Noto Sans CJK HK
+Noto Sans CJK KR
+Noto Sans CJK SC
+Noto Sans CJK HK
+Bitstream Charter
+KacstOne
+AR PL UKai TW
+Mitra Mono
+Kalapi
+DejaVu Sans
+Khmer OS
+Courier 10 Pitch
+Laksaman
+Noto Sans CJK JP
+AR PL UKai HK
+Liberation Sans Narrow
+Noto Sans CJK SC
+Liberation Mono
+Noto Serif CJK TC
+Nimbus Sans L
+AR PL UKai CN
+padmaa-Bold.1.1
+Manjari
+AR PL UMing TW MBE
+Ani
+Noto Sans CJK JP
+Noto Serif CJK TC
+Noto Serif CJK TC
+Rachana
+Noto Sans CJK JP
+AR PL UMing HK
+Pagul
+Lohit Telugu
+Lohit Tamil Classical
+AR PL UMing CN
+Samanata
+Droid Sans Fallback
+KH Dot kagurazaka 16
+Noto Serif CJK JP
+Vemana2000
+AR PL UMing TW
+Standard Symbols L
+Lohit Gujarati
+KacstPen
+RaghuMalayalam
+KacstDecorative
+Nimbus Mono L
+Noto Serif CJK SC
+Liberation Serif
+Noto Sans CJK JP
+Manjari
+Lohit Malayalam
+Noto Serif CJK JP
+LKLUG
+Nimbus Roman No9 L
+Noto Serif CJK SC
+Ubuntu
+Noto Sans CJK TC
+Noto Sans CJK SC
+Noto Sans CJK KR
+Noto Sans CJK HK
+Noto Sans CJK KR
+KacstPoster
+Noto Sans CJK JP
+Liberation Sans
+Noto Sans CJK SC
+Manjari
+Noto Sans CJK TC
+Noto Sans CJK HK
+Mukti Narrow
+FreeSans
+Sarai
+Noto Sans CJK KR
+Lohit Devanagari
+Noto Color Emoji
+Uroob
+Noto Mono
+KacstNaskh
+Dyuthi
+Noto Serif CJK JP
+Lohit Tamil
+Tlwg Typo
+MT Extra
+KacstFarsi
+Suruma
+Lohit Bengali
+Noto Serif CJK KR
+Abyssinica SIL
+Jamrul
+Waree
+KacstTitle
+Noto Sans CJK TC
+padmaa
+DejaVu Serif
+Saab
+Navilu
+Gargi
+Garuda
+Samyak Malayalam
+Rekha
+KacstScreen
+Lohit Gurmukhi
+FreeMono
+Ubuntu Mono
+URW Bookman L
+Noto Serif CJK KR
