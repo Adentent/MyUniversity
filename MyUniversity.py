@@ -16,9 +16,10 @@ class Window:
         self.showing = []
     
     def start(self):
-        self.StartWindow()
-        if self.message == "ChoosePlayer":
-            self.ChoosePlayer()
+        try:
+            self.StartWindow()
+        except TclError:
+            pass
 
     def loop(self):
         self.root.mainloop()
@@ -36,6 +37,26 @@ class Window:
             i.pack_forget()
         self.showing = []
     
+    def NormalButton(self, text="", size=10, command=exit):
+        return Button(self.root,
+                      text=text,
+                      font=("zpix", size),
+                      bg="darkkhaki",
+                      fg="white",
+                      activebackground="darkkhaki",
+                      activeforeground="white",
+                      command=command)
+    
+    def RedButton(self, text="", size=10, command=exit):
+        return Button(self.root,
+                      text = text,
+                      font=("zpix", size),
+                      bg="grey",
+                      fg="white",
+                      activebackground="red",
+                      activeforeground="white",
+                      command=command)
+    
     class StartWindow:
         def __init__(self):
             Window.root.title("MyUniversity - Start")
@@ -47,30 +68,24 @@ class Window:
         def beginGame(self):
             Window.cleanWindow()
             Window.message = "ChoosePlayer"
+            # print("Dune")
 
         def main(self):
             Window.message = "StartWindow"
-            NewGame = Button(Window.root,
-                             text="开始游戏",
-                             font=("zpix", 50),
-                             bg="darkkhaki",
-                             fg="white",
-                             activebackground="darkkhaki",
-                             activeforeground="white",
-                             command=self.beginGame)
+            NewGame = Window.NormalButton(text="开始游戏",
+                                          size=50,
+                                          command=self.beginGame)
             Window.pack(NewGame)
-            QuitGame = Button(Window.root,
-                              text="关闭游戏",
-                              font=("zpix", 30),
-                              bg="grey",
-                              fg="white",
-                              activebackground="red",
-                              activeforeground="white",
-                              command=self.quit)
+            QuitGame = Window.RedButton(text="关闭游戏",
+                                        size=30,
+                                        command=self.quit)
             Window.pack(QuitGame)
 
-            if Window.message != "StartWindow":
-                return
+            while True:
+                Window.root.update()
+                if Window.message == "ChoosePlayer":
+                    Window.ChoosePlayer()
+                    return
 
             
     class ChoosePlayer:
@@ -78,14 +93,21 @@ class Window:
             Window.root.title("My University - ChoosePlayer")
             self.main()
 
+        def ChooseLi(self):
+            Window.message = "ChooseLi"
+        
         def main(self):
-            Li = Button(Window.root,
-                        text="小李")
+            Li = Window.NormalButton(text="小李",
+                                     size=40,
+                                     command=self.ChooseLi)
             Window.pack(Li)
+
+            while True:
+                Window.root.update()
+                if Window.message == "ChooseLi":
+                    return
+                
 
 if __name__ == "__main__":
     Window = Window()
-    start = Thread(target=Window.start(), name="main")
-    loop = Thread(target=Window.loop, name="loop")
-    start.run()
-    loop.run()
+    Window.start()
