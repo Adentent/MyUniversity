@@ -34,10 +34,9 @@ class Window:
 
         def beginGame(self):
             Window.cleanWindow()
-            Window.message = "StartGame"
+            Window.message = "ChoosePlayer"
 
         def main(self):
-            # main
             NewGame = Button(Window.root,
                              text="开始游戏",
                              font=("zpix", 50),
