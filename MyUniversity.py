@@ -5,7 +5,7 @@ DESIGN: Adentent
 
 
 from tkinter import *
-import os
+from threading import *
 
 
 class Window:
@@ -14,6 +14,14 @@ class Window:
         self.root.title("My University")
         self.message = ""
         self.showing = []
+    
+    def start(self):
+        self.StartWindow()
+        if self.message == "ChoosePlayer":
+            self.ChoosePlayer()
+
+    def loop(self):
+        self.root.mainloop()
 
     def pack(self, obj):
         obj.pack()
@@ -29,6 +37,10 @@ class Window:
         self.showing = []
     
     class StartWindow:
+        def __init__(self):
+            Window.root.title("MyUniversity - Start")
+            self.main()
+
         def quit(self):
             exit()
 
@@ -37,6 +49,7 @@ class Window:
             Window.message = "ChoosePlayer"
 
         def main(self):
+            Window.message = "StartWindow"
             NewGame = Button(Window.root,
                              text="开始游戏",
                              font=("zpix", 50),
@@ -56,12 +69,23 @@ class Window:
                               command=self.quit)
             Window.pack(QuitGame)
 
-            Window.root.mainloop()
+            if Window.message != "StartWindow":
+                return
+
+            
     class ChoosePlayer:
         def __init__(self):
-            Window.root.title("My University - ChossePlayer")
+            Window.root.title("My University - ChoosePlayer")
+            self.main()
+
+        def main(self):
+            Li = Button(Window.root,
+                        text="小李")
+            Window.pack(Li)
 
 if __name__ == "__main__":
     Window = Window()
-    StartWindow = Window.StartWindow()
-    StartWindow.main()
+    start = Thread(target=Window.start(), name="main")
+    loop = Thread(target=Window.loop, name="loop")
+    start.run()
+    loop.run()
